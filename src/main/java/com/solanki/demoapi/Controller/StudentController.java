@@ -9,6 +9,7 @@ import com.solanki.demoapi.Repository.StudentRepository;
 
 @RestController
 @RequestMapping("/students")
+@CrossOrigin(origins = "*")
 public class StudentController {
     @Autowired
     private StudentRepository studentRepository;
